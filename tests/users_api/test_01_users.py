@@ -16,10 +16,10 @@ def test_02_all_users_keys():
     assert 'page' in response_body
     assert 'per_page' in response_body
     assert 'data' in response_body
-    assert 'email' in response_body[0]
-    assert 'first_name' in response_body[0]
-    assert 'last_name' in response_body[0]
-    assert 'avatar' in response_body[0]
+    assert 'email' in response_body['data'][0]
+    assert 'first_name' in response_body['data'][0]
+    assert 'last_name' in response_body['data'][0]
+    assert 'avatar' in response_body['data'][0]
 
 
 @allure.step("Single user get")

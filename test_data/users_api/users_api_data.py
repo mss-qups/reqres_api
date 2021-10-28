@@ -7,7 +7,7 @@ def response_users():
     """returns response in json and status for users get"""
     res = data_from_server("GET", users_endpoint)
     return res.json(), res.status_code
-
+print(response_users())
 
 def response_single_user():
     """returns response in json and status for user get"""

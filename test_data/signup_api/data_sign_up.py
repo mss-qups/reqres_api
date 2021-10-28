@@ -20,4 +20,3 @@ def response_signup_password():
     """returns response and status for signup with only email"""
     res = data_from_server("POST", register_endpoint, headers=headers_post, params=only_password)
     return res.json(), res.status_code
-

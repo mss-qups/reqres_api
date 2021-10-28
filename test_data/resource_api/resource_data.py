@@ -13,7 +13,7 @@ def response_single_resource_get():
     """returns response as json and status code"""
     res = data_from_server("GET", single_resource)
     return res.json(), res.status_code
-print(response_single_resource_get())
+
 
 def response_single_resource_not_found():
     """returns single user not found as json and status code"""
